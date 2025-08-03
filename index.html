@@ -1,2 +1,79 @@
+
 <!DOCTYPE html>
-<!-- The full working HTML code goes here — truncated for brevity -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edutech - Ask Anything</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      height: 40px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: rgba(255,255,255,0.15);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .question-input {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .answer-box {
+      margin-top: 2rem;
+      padding: 1rem;
+      border: 2px solid #2563eb;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 0 12px rgba(37, 99, 235, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./assets/education-logo.png" alt="Edutech Logo" />
+      <strong>Edutech</strong>
+    </div>
+    <nav>
+      <a href="#" style="color:white; margin-right: 1rem;">About</a>
+      <a href="#" style="color:white; margin-right: 1rem;">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Welcome to Edutech – Ask Anything!</h1>
+    <p>Upload your image or type your question below to get instant answers.</p>
+
+    <input type="file" accept="image/*" /><br/><br/>
+    <input type="text" class="question-input" placeholder="Ask your question here..." />
+    <div class="answer-box">💡 AI-generated answer will appear here...</div>
+  </main>
+</body>
+</html>
