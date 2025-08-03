@@ -1,30 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edutech - Ask Anything</title>
-  <style>
-    body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
-    header { background: #2563eb; color: white; padding: 1rem 2rem; display: flex; align-items: center; }
-    .logo img { height: 40px; margin-right: 10px; }
-    main { padding: 2rem; max-width: 800px; margin: auto; background: white; border-radius: 10px; margin-top: 2rem; }
-    .answer-box { border: 2px solid #2563eb; padding: 1rem; margin-top: 1rem; border-radius: 10px; background: #f9f9f9; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="./assets/education-logo.png" alt="Logo"><strong>Edutech</strong>
+      <img src="assets/logo.png" alt="Logo" class="logo-icon" />
+      <div id="animatedLogo">Edutech</div>
     </div>
+    <nav>
+      <a href="#">Contact Us</a>
+      <a href="#">About</a>
+      <a href="#">Help</a>
+    </nav>
   </header>
   <main>
     <h1>Welcome to Edutech – Ask Anything!</h1>
     <p>Upload your image or type your question below to get instant answers.</p>
-    <input type="file" accept="image/*"><br><br>
-    <input type="text" placeholder="Ask your question here..." style="width:100%; padding:10px;">
+    <input type="file" />
+    <input type="text" placeholder="Ask about: Science..." />
+    <div>
+      <button id="getSolutionBtn">Get Solution</button>
+    </div>
     <div class="answer-box">💡 AI-generated answer will appear here...</div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>

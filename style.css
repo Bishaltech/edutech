@@ -1,0 +1,29 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  color: #111;
+  padding: 2rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #2563eb;
+  padding: 1rem;
+  color: white;
+}
+.logo-icon {
+  width: 40px;
+}
+.answer-box {
+  border: 2px solid #2563eb;
+  padding: 1rem;
+  background: white;
+  margin-top: 1rem;
+  animation: glow-border 2s infinite ease-in-out;
+}
+@keyframes glow-border {
+  0% { box-shadow: 0 0 8px rgba(37, 99, 235, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.6); }
+  100% { box-shadow: 0 0 8px rgba(37, 99, 235, 0.3); }
+}
