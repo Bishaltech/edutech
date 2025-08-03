@@ -1,33 +1,53 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edutech - Ask Anything</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="assets/logo.png" alt="Logo" class="logo-icon" />
-      <div id="animatedLogo">Edutech</div>
+      <img class="logo-icon" src="logo.png" alt="Logo" />
+      <div class="logo-text" id="animatedLogo">Edutech</div>
     </div>
-    <nav>
+    <nav class="nav-links">
       <a href="#">Contact Us</a>
       <a href="#">About</a>
       <a href="#">Help</a>
     </nav>
   </header>
+
   <main>
-    <h1>Welcome to Edutech – Ask Anything!</h1>
-    <p>Upload your image or type your question below to get instant answers.</p>
-    <input type="file" />
-    <input type="text" placeholder="Ask about: Science..." />
-    <div>
-      <button id="getSolutionBtn">Get Solution</button>
+    <div class="container">
+      <h1>🤖 Welcome to Edutech – Ask Anything!</h1>
+      <p>Upload your image or type your question below to get instant answers.</p>
+
+      <label class="custom-file-upload">
+        <input type="file" accept="image/*" hidden id="imageUpload" />
+        📁 Choose File
+      </label>
+      <span id="fileName"></span>
+
+      <div class="input-group">
+        <span class="icon-left">🔍</span>
+        <input type="text" id="textInput" class="question-input" placeholder="Ask about: Science..." />
+        <button class="mic-btn">
+          <img src="microphone.png" alt="Mic" />
+        </button>
+      </div>
+
+      <div class="button-row">
+        <button id="getSolutionBtn">Get Solution</button>
+      </div>
+
+      <div class="answer-box" id="answerBox">💡 AI-generated answer will appear here...</div>
     </div>
-    <div class="answer-box">💡 AI-generated answer will appear here...</div>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>

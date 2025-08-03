@@ -1,29 +1,101 @@
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f0f0;
-  color: #111;
-  padding: 2rem;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
 }
 header {
+  background-color: #2563eb;
+  color: white;
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
-  background: #2563eb;
-  padding: 1rem;
-  color: white;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .logo-icon {
-  width: 40px;
+  width: 44px;
+  height: 44px;
+}
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.nav-links a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+}
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255,255,255,0.25);
+  border-radius: 12px;
+  backdrop-filter: blur(14px);
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.input-group {
+  position: relative;
+  margin-top: 1rem;
+}
+.icon-left {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.question-input {
+  width: 100%;
+  padding: 1rem 3.5rem 1rem 2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.mic-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+}
+.mic-btn img {
+  width: 24px;
+  height: 24px;
+}
+.button-row {
+  margin-top: 1rem;
+  text-align: right;
+}
+#getSolutionBtn {
+  padding: 0.75rem 1.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
 }
 .answer-box {
-  border: 2px solid #2563eb;
-  padding: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
   background: white;
-  margin-top: 1rem;
-  animation: glow-border 2s infinite ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  animation: glow 2s infinite alternate;
 }
-@keyframes glow-border {
-  0% { box-shadow: 0 0 8px rgba(37, 99, 235, 0.3); }
-  50% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.6); }
-  100% { box-shadow: 0 0 8px rgba(37, 99, 235, 0.3); }
+@keyframes glow {
+  0% { box-shadow: 0 0 6px rgba(59,130,246,0.4); }
+  100% { box-shadow: 0 0 16px rgba(59,130,246,0.8); }
 }
