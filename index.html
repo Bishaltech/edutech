@@ -5,74 +5,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edutech - Ask Anything</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #2563eb;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .logo img {
-      height: 40px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: rgba(255,255,255,0.15);
-      border-radius: 12px;
-      backdrop-filter: blur(10px);
-      padding: 2rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    }
-    .question-input {
-      width: 100%;
-      padding: 0.8rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    .answer-box {
-      margin-top: 2rem;
-      padding: 1rem;
-      border: 2px solid #2563eb;
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: 0 0 12px rgba(37, 99, 235, 0.2);
-    }
+    body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+    header { background: #2563eb; color: white; padding: 1rem 2rem; display: flex; align-items: center; }
+    .logo img { height: 40px; margin-right: 10px; }
+    main { padding: 2rem; max-width: 800px; margin: auto; background: white; border-radius: 10px; margin-top: 2rem; }
+    .answer-box { border: 2px solid #2563eb; padding: 1rem; margin-top: 1rem; border-radius: 10px; background: #f9f9f9; }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="./assets/education-logo.png" alt="Edutech Logo" />
-      <strong>Edutech</strong>
+      <img src="./assets/education-logo.png" alt="Logo"><strong>Edutech</strong>
     </div>
-    <nav>
-      <a href="#" style="color:white; margin-right: 1rem;">About</a>
-      <a href="#" style="color:white; margin-right: 1rem;">Contact</a>
-    </nav>
   </header>
-
-  <main class="container">
+  <main>
     <h1>Welcome to Edutech – Ask Anything!</h1>
     <p>Upload your image or type your question below to get instant answers.</p>
-
-    <input type="file" accept="image/*" /><br/><br/>
-    <input type="text" class="question-input" placeholder="Ask your question here..." />
+    <input type="file" accept="image/*"><br><br>
+    <input type="text" placeholder="Ask your question here..." style="width:100%; padding:10px;">
     <div class="answer-box">💡 AI-generated answer will appear here...</div>
   </main>
 </body>
